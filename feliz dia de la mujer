@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>FELIZ DIA DE LA MUJER <3</title>
+</head>
+<body>
+    <h1>FELIZ DIA DE LA MUJER <3</h1>
+    <p id="fraseAleatoria"></p>
+
+    <script>
+        // Definir las frases
+        var frases = [
+            "Mujeres: tejiendo sueños, rompiendo barreras, construyendo un futuro mejor",
+            "Por un mundo donde las niñas puedan soñar a lo grande y alcanzar sus metas.",
+            "Mujeres diversas, unidas por la lucha por la igualdad",
+            "Ni una menos, vivas, libres y sin miedo",
+            "El futuro es femenino: ¡Empoderemos a las mujeres!",
+            "8 de marzo: ¡Un día para reflexionar y seguir luchando por la igualdad!",
+            "Mujeres: líderes, científicas, artistas, madres, luchadoras... ¡Inspiración para el mundo!",
+            "Juntas somos más fuertes: ¡Por un mundo donde la igualdad sea una realidad!",
+            "Mujeres: con la M de Maravillosas, la U de Únicas, la J de Juntas y la E de Empoderadas.",
+            "Mujeres: rompiendo techos de cristal y construyendo un futuro sin límites.",
+            "8 de marzo: ¡Un día para celebrar la revolución que somos las mujeres!",
+            " ¡Mujeres imparables!",
+            "¡Niñas fuertes, mujeres empoderadas!",
+            "¡Crean en sus sueños, pueden lograr lo que sea!",
+            "¡El futuro es femenino, niñas!",
+            "¡Luchen por la igualdad desde pequeñas!",
+            "¡No hay límites para las niñas!",
+            "¡Basta de violencia contra las mujeres!",
+            "¡Acceso a la educación y la salud para todas las mujeres!",
+            "¡Por un mundo donde las mujeres sean libres!",
+            "¡Todas las mujeres somos importantes!",
+            "¡Juntas somos más fuertes!"
+        ];
+
+        // Función para mostrar una frase aleatoria
+        function mostrarFraseAleatoria() {
+            var indiceAleatorio = Math.floor(Math.random() * frases.length);
+            var fraseSeleccionada = frases[indiceAleatorio];
+            document.getElementById('fraseAleatoria').innerText = fraseSeleccionada;
+        }
+
+        // Mostrar una frase aleatoria al cargar la página
+        document.addEventListener('DOMContentLoaded', mostrarFraseAleatoria);
+    </script>
+</body>
+</html>
